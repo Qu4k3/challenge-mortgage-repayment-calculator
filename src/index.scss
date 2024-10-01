@@ -1,0 +1,14 @@
+@use 'styles/variables' as v;
+
+:root {
+  font-family: v.$ff-default;
+  font-weight: v.$fw-default;
+
+  color: v.$color-slate-700;
+  background-color: v.$color-slate-300;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
