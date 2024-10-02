@@ -32,7 +32,7 @@ function App() {
       <section className="first">
         <div>
           <h1>Mortgage Calculator</h1>
-          <span>Clear All</span>
+          <span onClick={() => reset()}>Clear All</span>
         </div>
         <form>
           <div className='form-group'>

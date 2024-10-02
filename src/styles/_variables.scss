@@ -1,6 +1,7 @@
 // ## Colors
 // ### Primary
 $color-lime: hsl(61, 70%, 52%);
+$color-lime-alpha: 61, 70%, 52%;
 $color-red: hsl(4, 69%, 50%);
 // ### Neutral
 $color-white: hsl(0, 0%, 100%);
@@ -17,8 +18,8 @@ $fw-default: 500;
 $fw-bold: 700;
 $fs-default: 16px;
 
-$padding-field: 15px 25px;
+$padding-field: 15px 20px;
 $br-default: 6px;
 
 // breakpoints
-$mobile: 576px;
+$mobile: 840px;
