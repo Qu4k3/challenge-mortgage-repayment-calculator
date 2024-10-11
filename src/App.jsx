@@ -36,52 +36,54 @@ function App() {
         </div>
         <form>
           <div className='form-group'>
-            <label htmlFor="firstName">Mortgage Amount</label>
+            <label htmlFor="amount">Mortgage Amount</label>
             <input
-              type="text"
-              id="firstName"
-              name="firstName"
+              type="number"
+              id="amount"
+              name="amount"
+              pattern="[0-9]*"
+              onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
               aria-required="true"
-              aria-invalid={errors.firstName ? "true" : "false"}
-              {...register("firstName", {
+              aria-invalid={errors.amount ? "true" : "false"}
+              {...register("amount", {
                 required: true
               })}
-              className={errors.firstName ? "error" : ""}
+              className={errors.amount ? "error" : ""}
             />
-            <ErrorMessage errors={errors} fieldName="firstName" />
+            <ErrorMessage errors={errors} fieldName="amount" />
           </div>
 
           <div className='wrapper-columns'>
             <div className='form-group'>
-              <label htmlFor="firstName">Mortgage Term</label>
+              <label htmlFor="term">Mortgage Term</label>
               <input
-                type="text"
-                id="firstName"
-                name="firstName"
+                type="number"
+                id="term"
+                name="term"
                 aria-required="true"
-                aria-invalid={errors.firstName ? "true" : "false"}
-                {...register("firstName", {
+                aria-invalid={errors.term ? "true" : "false"}
+                {...register("term", {
                   required: true
                 })}
-                className={errors.firstName ? "error" : ""}
+                className={errors.term ? "error" : ""}
               />
-              <ErrorMessage errors={errors} fieldName="firstName" />
+              <ErrorMessage errors={errors} fieldName="term" />
             </div>
 
             <div className='form-group'>
-              <label htmlFor="lastName">Interest Rate</label>
+              <label htmlFor="rate">Interest Rate</label>
               <input
-                type="text"
-                id="lastName"
-                name="lastName"
+                type="number"
+                id="rate"
+                name="rate"
                 aria-required="true"
-                aria-invalid={errors.lastName ? "true" : "false"}
-                {...register("lastName", {
+                aria-invalid={errors.rate ? "true" : "false"}
+                {...register("rate", {
                   required: true
                 })}
-                className={errors.lastName ? "error" : ""}
+                className={errors.rate ? "error" : ""}
               />
-              <ErrorMessage errors={errors} fieldName="lastName" />
+              <ErrorMessage errors={errors} fieldName="rate" />
             </div>
           </div>
 
